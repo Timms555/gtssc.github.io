@@ -53,24 +53,64 @@ h1 {font-size: 2.5rem;}
     <div class="w3-third w3-container">
       <h1 class="w3-text-teal">Contact:</h1>
     </div>
-    <table class="w3-table">
 
-<table class="w3-table">
-	<tr>
-    	<td>Damon De Freitas</td>
-        <td>Daniel Wang</td>
-    </tr>
+	<table class="w3-table">
+		<tr>
+        	<td>Sgt Allen Lui</td>
+     	   <td>Capt Daniel Wang</td>
+			<td>Sgt Tom Brickett</td>
+    	</tr>
 
-	<tr>
-		<td>Tom Brickett</td>
-        <td>Dan Wong</td>
-        <td>Victor Mitrica</td>
-	</tr>
+		<tr>
+    		<td>MWO Damon De Freitas</td>
+        	<td>Dan Wong</td>
+        	<td>WO Victor Mitrica</td>
+		</tr>
 
-	<tr>
-    	<td>____ Ng</td>
-        <td>cc</td>
-	</tr>
-</table>
+		<tr>
+        	<td> </td>
+    		<td>____ Ng</td>
+		</tr>
+	</table>
+	<footer id="myFooter">
+    	<div class="w3-container w3-theme-l2 w3-padding-16">
+      	<h4>Garrison Toronto Sports Shooting Club</h4>
+    	</div>
+
+    	<div class="w3-container w3-theme-l1 w3-padding-32">
+      	<h5>Denison Armoury</h5>
+      	<h5>1 Yukon Lane, Toronto, ON, M3K 0A1</h5>
+    	</div>
+  	</footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+</body>
+
 
 <html>
