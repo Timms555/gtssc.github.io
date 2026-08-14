@@ -27,7 +27,7 @@ h1 {font-size: 2.5rem;}
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
     <a href="events.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Events</a>
     <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
     <a href="faq.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">FAQ</a>
@@ -62,4 +62,31 @@ h1 {font-size: 2.5rem;}
       <p class="w3-border w3-padding-large, w3-padding-64 w3-center">PHOTOS</p>
     </div>
 
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+</body>
+
+    
 <html>
